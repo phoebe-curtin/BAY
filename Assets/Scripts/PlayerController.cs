@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
 
     public int money = 0; 
+    public Text MoneyText;
     
     //inventory
 
@@ -31,6 +33,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        
+        MoneyText.text = money.ToString();
     }
 }
