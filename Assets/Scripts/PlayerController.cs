@@ -18,6 +18,12 @@ public class PlayerController : MonoBehaviour
 
         if(type == ItemType.medicine) {
             medicine++;
+        } else if(type == ItemType.food) {
+            food++;
+        } else if(type == ItemType.bullets) {
+            bullets++;
+        } else if(type == ItemType.boat) {
+            boat++;
         }
 
     }
