@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PhoneHome : MonoBehaviour
+public class ControllerPhone : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,6 +14,13 @@ public class PhoneHome : MonoBehaviour
     public GameObject parentShop; 
     public GameObject parentPhone; 
     public GameObject currentScreen;
+    public GameObject ParentApps;
+
+    public void InventoryAppClicked()
+    {
+        ParentApps.SetActive(false);
+
+    }
     
 
     // Update is called once per frame
