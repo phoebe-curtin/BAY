@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class Inverter : MonoBehaviour
 {
-    public bool invert;
+    [Header("INVERT")]
+    public bool isInverted;
+
+    [Header("MATERIALS")]
     public Material invertMaterial;
     public Material reverseInvertMaterial;
 
     void Update()
     {
-        invertMaterial.SetFloat("_InvertColors", invert ? 1 : 0);
-        reverseInvertMaterial.SetFloat("_InvertColors", invert ? 0 : 1);
+        // testing //
+        if (Input.GetKeyDown(KeyCode.Space))
+            isInverted = !isInverted;
+        // testing //
+
+        invertMaterial.SetFloat("_InvertColors", isInverted ? 1 : 0);
+        reverseInvertMaterial.SetFloat("_InvertColors", isInverted ? 0 : 1);
     }
 }
