@@ -3,16 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GenerateIsland : MonoBehaviour
+public class Island : MonoBehaviour
 {
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-
-            MakeRandomIsland();
-        }
-    }
-
     [Header("SPRITES")]
     public Sprite[] mainSprites;
     public Sprite[] secondarySprites;
@@ -22,7 +14,7 @@ public class GenerateIsland : MonoBehaviour
     public SpriteRenderer secondaryRenderer;
     public SpriteRenderer detailRenderer;
 
-    void MakeRandomIsland ()
+    public void RandomizeSprites ()
     {
         mainRenderer.sprite = mainSprites[Random.Range(0, mainSprites.Length)];
         secondaryRenderer.sprite = secondarySprites[Random.Range(0, secondarySprites.Length)];
