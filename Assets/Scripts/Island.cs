@@ -14,6 +14,11 @@ public class Island : MonoBehaviour
     public SpriteRenderer secondaryRenderer;
     public SpriteRenderer detailRenderer;
 
+    void Awake()
+    {
+        MakeRandomName();
+    }
+
     public void RandomizeSprites ()
     {
         mainRenderer.sprite = mainSprites[Random.Range(0, mainSprites.Length)];
@@ -27,7 +32,8 @@ public class Island : MonoBehaviour
 
     public Text nameText;
 
-    void MakeRandomName () {
+    void MakeRandomName () 
+    {
         nameText.text = firstParts[Random.Range(0, firstParts.Length)] + " " + secondParts[Random.Range(0, secondParts.Length)];
     }
 }

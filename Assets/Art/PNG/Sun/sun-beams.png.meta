@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sun-beams_5: -610879865455484445
+      sun-beams_2: 7677355775974569354
+      sun-beams_3: -273242880807077876
+      sun-beams_4: 7782180114868872273
+      sun-beams_1: 3404574147781090611
+      sun-beams_0: 6262757074554987896
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -54,6 +54,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -352,6 +353,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      islands-secondary_8: -3639225540651823523
+      islands-secondary_1: -5389696676743209480
+      islands-secondary_3: 2846796440109795733
+      islands-secondary_4: -5467219139265769663
+      islands-secondary_7: -3617448159420013980
+      islands-secondary_6: 3803109712039434979
+      islands-secondary_9: -293875837158739056
+      islands-secondary_0: -2305969561321002588
+      islands-secondary_2: -1601219374461034640
+      islands-secondary_5: 4836800735574210078
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
