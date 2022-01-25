@@ -14,9 +14,12 @@ public class Island : MonoBehaviour
     public SpriteRenderer secondaryRenderer;
     public SpriteRenderer detailRenderer;
 
+    public GameObject islandNameParent;
+
     void Awake()
     {
         MakeRandomName();
+        islandNameParent.SetActive(false);
     }
 
     public void RandomizeSprites ()
@@ -34,6 +37,17 @@ public class Island : MonoBehaviour
 
     void MakeRandomName () 
     {
-        nameText.text = firstParts[Random.Range(0, firstParts.Length)] + " " + secondParts[Random.Range(0, secondParts.Length)];
+        nameText.text = secondParts[Random.Range(0, secondParts.Length)] + " " + firstParts[Random.Range(0, firstParts.Length)];
+    }
+
+        void OnMouseEnter ()
+    {
+        print("i feel the mouse and its hard cock");
+        islandNameParent.SetActive(true);
+    }
+
+    void OnMouseExit ()
+    {
+        islandNameParent.SetActive(false);
     }
 }
