@@ -9,12 +9,14 @@ public class Island : MonoBehaviour
     public Sprite[] mainSprites;
     public Sprite[] secondarySprites;
     public Sprite[] detailSprites;
+     
 
     public SpriteRenderer mainRenderer;
     public SpriteRenderer secondaryRenderer;
     public SpriteRenderer detailRenderer;
 
     public GameObject islandNameParent;
+    public GameObject islandInfoSprite;
 
     void Awake()
     {
@@ -42,12 +44,17 @@ public class Island : MonoBehaviour
 
         void OnMouseEnter ()
     {
-        print("i feel the mouse and its hard cock");
         islandNameParent.SetActive(true);
     }
 
     void OnMouseExit ()
     {
         islandNameParent.SetActive(false);
+    }
+
+
+    void OnMouseDown ()
+    {
+        islandInfoSprite.SetActive(true);)
     }
 }
