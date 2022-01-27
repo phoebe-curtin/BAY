@@ -10,18 +10,18 @@ public class Island : MonoBehaviour
     public Sprite[] secondarySprites;
     public Sprite[] detailSprites;
      
-
     public SpriteRenderer mainRenderer;
     public SpriteRenderer secondaryRenderer;
     public SpriteRenderer detailRenderer;
 
     public GameObject islandNameParent;
-    public GameObject islandInfoSprite;
+    public IslandInfoScript islandInfoParent;
 
     void Awake()
     {
         MakeRandomName();
         islandNameParent.SetActive(false);
+        islandInfoParent = GameObject.FindWithTag("IslandInfoParent").GetComponent<IslandInfoScript>();
     }
 
     public void RandomizeSprites ()
@@ -55,6 +55,6 @@ public class Island : MonoBehaviour
 
     void OnMouseDown ()
     {
-        islandInfoSprite.SetActive(true);)
+        islandInfoParent.TurnOnInfoSprite();
     }
 }

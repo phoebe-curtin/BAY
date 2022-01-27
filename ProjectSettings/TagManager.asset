@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerController
   - Inverter
+  - IslandInfoParent
   layers:
   - Default
   - TransparentFX
